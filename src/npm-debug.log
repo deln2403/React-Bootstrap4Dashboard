@@ -1,0 +1,267 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'tether',
+1 verbose cli   '--save' ]
+2 info using npm@2.14.22
+3 info using node@v0.10.43
+4 verbose install initial load of /data/React-Bootstrap4Dashboard/package.json
+5 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/classnames/package.json
+6 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/deep-equal/package.json
+7 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/query-string/package.json
+8 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react/package.json
+9 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-create-fragment/package.json
+10 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-css-transition-group/package.json
+11 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-linked-state-mixin/package.json
+12 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-perf/package.json
+13 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-pure-render-mixin/package.json
+14 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-test-utils/package.json
+15 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-transition-group/package.json
+16 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-addons-update/package.json
+17 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-bootstrap/package.json
+18 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-dom/package.json
+19 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-router/package.json
+20 verbose installManyTop reading scoped package data from /data/React-Bootstrap4Dashboard/node_modules/react-router-active-component/package.json
+21 verbose readDependencies loading dependencies from /data/React-Bootstrap4Dashboard/package.json
+22 silly cache add args [ 'tether', null ]
+23 verbose cache add spec tether
+24 silly cache add parsed spec { raw: 'tether',
+24 silly cache add   scope: null,
+24 silly cache add   name: 'tether',
+24 silly cache add   rawSpec: '',
+24 silly cache add   spec: 'latest',
+24 silly cache add   type: 'tag' }
+25 silly addNamed tether@latest
+26 verbose addNamed "latest" is being treated as a dist-tag for tether
+27 info addNameTag [ 'tether', 'latest' ]
+28 silly mapToRegistry name tether
+29 silly mapToRegistry using default registry
+30 silly mapToRegistry registry https://registry.npmjs.org/
+31 silly mapToRegistry uri https://registry.npmjs.org/tether
+32 verbose addNameTag registry:https://registry.npmjs.org/tether not in flight; fetching
+33 verbose request uri https://registry.npmjs.org/tether
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 21:14:28
+36 verbose request id f22419b225056a8f
+37 verbose etag "D617DRS87AM45K15LJ1P7E82C"
+38 http request GET https://registry.npmjs.org/tether
+39 http 304 https://registry.npmjs.org/tether
+40 verbose headers { date: 'Tue, 07 Jun 2016 01:15:06 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   etag: '"D617DRS87AM45K15LJ1P7E82C"',
+40 verbose headers   age: '132',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-atl6249-ATL',
+40 verbose headers   'x-cache': 'HIT',
+40 verbose headers   'x-cache-hits': '1',
+40 verbose headers   'x-timer': 'S1465262106.846218,VS0,VE0',
+40 verbose headers   vary: 'Accept-Encoding' }
+41 silly get cb [ 304,
+41 silly get   { date: 'Tue, 07 Jun 2016 01:15:06 GMT',
+41 silly get     via: '1.1 varnish',
+41 silly get     'cache-control': 'max-age=300',
+41 silly get     etag: '"D617DRS87AM45K15LJ1P7E82C"',
+41 silly get     age: '132',
+41 silly get     connection: 'keep-alive',
+41 silly get     'x-served-by': 'cache-atl6249-ATL',
+41 silly get     'x-cache': 'HIT',
+41 silly get     'x-cache-hits': '1',
+41 silly get     'x-timer': 'S1465262106.846218,VS0,VE0',
+41 silly get     vary: 'Accept-Encoding' } ]
+42 verbose etag https://registry.npmjs.org/tether from cache
+43 verbose get saving tether to /home/n/.npm/registry.npmjs.org/tether/.cache.json
+44 verbose correctMkdir /home/n/.npm correctMkdir not in flight; initializing
+45 silly addNameTag next cb for tether with tag latest
+46 silly addNamed tether@1.3.2
+47 verbose addNamed "1.3.2" is a plain semver version for tether
+48 silly cache afterAdd tether@1.3.2
+49 verbose afterAdd /home/n/.npm/tether/1.3.2/package/package.json not in flight; writing
+50 verbose correctMkdir /home/n/.npm correctMkdir not in flight; initializing
+51 verbose afterAdd /home/n/.npm/tether/1.3.2/package/package.json written
+52 silly install resolved [ { name: 'tether',
+52 silly install resolved     version: '1.3.2',
+52 silly install resolved     description: 'A client-side library to make absolutely positioned elements attach to elements in the page efficiently.',
+52 silly install resolved     authors:
+52 silly install resolved      [ 'Zack Bloom <zackbloom@gmail.com>',
+52 silly install resolved        'Adam Schwartz <adam.flynn.schwartz@gmail.com>' ],
+52 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+52 silly install resolved     scripts:
+52 silly install resolved      { reinstall: 'del node_modules && npm install',
+52 silly install resolved        watch: 'gulp watch',
+52 silly install resolved        build: 'gulp build' },
+52 silly install resolved     repository:
+52 silly install resolved      { type: 'git',
+52 silly install resolved        url: 'git+https://github.com/HubSpot/tether.git' },
+52 silly install resolved     license: 'MIT',
+52 silly install resolved     main: 'dist/js/tether.js',
+52 silly install resolved     devDependencies:
+52 silly install resolved      { del: '^2.0.2',
+52 silly install resolved        'del-cli': '^0.2.0',
+52 silly install resolved        gulp: '^3.9.0',
+52 silly install resolved        'gulp-autoprefixer': '^3.0.1',
+52 silly install resolved        'gulp-babel': '^5.2.1',
+52 silly install resolved        'gulp-bump': '^0.3.1',
+52 silly install resolved        'gulp-concat': '^2.6.0',
+52 silly install resolved        'gulp-header': '^1.7.1',
+52 silly install resolved        'gulp-minify-css': '^1.2.1',
+52 silly install resolved        'gulp-plumber': '^1.0.1',
+52 silly install resolved        'gulp-rename': '^1.2.2',
+52 silly install resolved        'gulp-sass': '^2.0.4',
+52 silly install resolved        'gulp-uglify': '^1.4.1',
+52 silly install resolved        'gulp-wrap-umd': '^0.2.1' },
+52 silly install resolved     gitHead: '48ad90f391c432847757d6b5fb142f6bee93d303',
+52 silly install resolved     bugs: { url: 'https://github.com/HubSpot/tether/issues' },
+52 silly install resolved     homepage: 'https://github.com/HubSpot/tether#readme',
+52 silly install resolved     _id: 'tether@1.3.2',
+52 silly install resolved     _shasum: '99882bff445d4579877e1e358d65ce96431e08d0',
+52 silly install resolved     _from: 'tether@latest',
+52 silly install resolved     _npmVersion: '2.14.12',
+52 silly install resolved     _nodeVersion: '4.2.4',
+52 silly install resolved     _npmUser: { name: 'hs', email: 'devteam@hubspot.com' },
+52 silly install resolved     dist:
+52 silly install resolved      { shasum: '99882bff445d4579877e1e358d65ce96431e08d0',
+52 silly install resolved        tarball: 'https://registry.npmjs.org/tether/-/tether-1.3.2.tgz' },
+52 silly install resolved     _npmOperationalInternal:
+52 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+52 silly install resolved        tmp: 'tmp/tether-1.3.2.tgz_1461866039580_0.9770346274599433' },
+52 silly install resolved     directories: {},
+52 silly install resolved     _resolved: 'https://registry.npmjs.org/tether/-/tether-1.3.2.tgz',
+52 silly install resolved     readme: 'ERROR: No README data found!' } ]
+53 info install tether@1.3.2 into /data/React-Bootstrap4Dashboard
+54 info installOne tether@1.3.2
+55 verbose installOne of tether to /data/React-Bootstrap4Dashboard not in flight; installing
+56 verbose correctMkdir /home/n/.npm/_locks correctMkdir not in flight; initializing
+57 verbose lock using /home/n/.npm/_locks/tether-460e86b75233a567.lock for /data/React-Bootstrap4Dashboard/node_modules/tether
+58 silly install write writing tether 1.3.2 to /data/React-Bootstrap4Dashboard/node_modules/tether
+59 verbose unbuild node_modules/tether
+60 silly gentlyRm /data/React-Bootstrap4Dashboard/node_modules/tether is being purged from base /data/React-Bootstrap4Dashboard
+61 verbose gentlyRm don't care about contents; nuking /data/React-Bootstrap4Dashboard/node_modules/tether
+62 verbose tar unpack /home/n/.npm/tether/1.3.2/package.tgz
+63 verbose tar unpacking to /data/React-Bootstrap4Dashboard/node_modules/tether
+64 silly gentlyRm /data/React-Bootstrap4Dashboard/node_modules/tether is being purged
+65 verbose gentlyRm don't care about contents; nuking /data/React-Bootstrap4Dashboard/node_modules/tether
+66 silly gunzTarPerm modes [ '755', '644' ]
+67 silly gunzTarPerm extractEntry package.json
+68 silly gunzTarPerm extractEntry .npmignore
+69 silly gunzTarPerm extractEntry README.md
+70 silly gunzTarPerm extractEntry LICENSE
+71 silly gunzTarPerm extractEntry gulpfile.js
+72 silly gunzTarPerm extractEntry bower.json
+73 silly gunzTarPerm extractEntry .hsdoc
+74 silly gunzTarPerm extractEntry component.json
+75 silly gunzTarPerm extractEntry dist/css/tether-theme-arrows-dark.css
+76 silly gunzTarPerm extractEntry dist/css/tether-theme-arrows-dark.min.css
+77 silly gunzTarPerm extractEntry dist/css/tether-theme-arrows.css
+78 silly gunzTarPerm extractEntry dist/css/tether-theme-arrows.min.css
+79 silly gunzTarPerm extractEntry dist/css/tether-theme-basic.css
+80 silly gunzTarPerm extractEntry dist/css/tether-theme-basic.min.css
+81 silly gunzTarPerm extractEntry dist/css/tether.css
+82 silly gunzTarPerm extractEntry dist/css/tether.min.css
+83 silly gunzTarPerm extractEntry dist/js/tether.js
+84 silly gunzTarPerm extractEntry dist/js/tether.min.js
+85 silly gunzTarPerm extractEntry docs/1-Overview/1-why_you_should_use_tether.md
+86 silly gunzTarPerm extractEntry docs/1-Overview/2-repositioning.md
+87 silly gunzTarPerm extractEntry docs/1-Overview/3-why_we_dont_support_IE_8.md
+88 silly gunzTarPerm extractEntry docs/2-Examples/1-list_of_examples.md
+89 silly gunzTarPerm extractEntry docs/2-Examples/2-projects_using_tether.md
+90 silly gunzTarPerm extractEntry docs/3-Advanced/1-embedding_tether.md
+91 silly gunzTarPerm extractEntry docs/3-Advanced/2-extending_tether.md
+92 silly gunzTarPerm extractEntry docs/coffee/intro.coffee
+93 silly gunzTarPerm extractEntry docs/css/intro.css
+94 silly gunzTarPerm extractEntry docs/intro.md
+95 silly gunzTarPerm extractEntry docs/js/intro.js
+96 silly gunzTarPerm extractEntry docs/js/markAttachment.js
+97 silly gunzTarPerm extractEntry docs/sass/intro.sass
+98 silly gunzTarPerm extractEntry docs/welcome/browser-demo.html
+99 silly gunzTarPerm extractEntry docs/welcome/coffee/welcome.coffee
+100 silly gunzTarPerm extractEntry docs/welcome/css/browser-demo.css
+101 silly gunzTarPerm extractEntry docs/welcome/css/prism.css
+102 silly gunzTarPerm extractEntry docs/welcome/css/welcome.css
+103 silly gunzTarPerm extractEntry docs/welcome/index.html
+104 silly gunzTarPerm extractEntry docs/welcome/js/drop.js
+105 silly gunzTarPerm extractEntry docs/welcome/js/jquery.js
+106 silly gunzTarPerm extractEntry docs/welcome/js/log.js
+107 silly gunzTarPerm extractEntry docs/welcome/js/tether-v0.1.3.js
+108 silly gunzTarPerm extractEntry docs/welcome/js/welcome.js
+109 silly gunzTarPerm extractEntry docs/welcome/sass/_inline-block.sass
+110 silly gunzTarPerm extractEntry docs/welcome/sass/browser-demo.sass
+111 silly gunzTarPerm extractEntry docs/welcome/sass/welcome.sass
+112 silly gunzTarPerm extractEntry examples/out-of-bounds/index.html
+113 silly gunzTarPerm extractEntry examples/chosen/chosen.js
+114 silly gunzTarPerm extractEntry examples/chosen/chosen-sprite.png
+115 silly gunzTarPerm extractEntry examples/chosen/chosen.css
+116 silly gunzTarPerm extractEntry examples/chosen/index.html
+117 silly gunzTarPerm extractEntry examples/content-visible/index.html
+118 silly gunzTarPerm extractEntry examples/dolls/dolls.js
+119 silly gunzTarPerm extractEntry examples/dolls/dolls.css
+120 silly gunzTarPerm extractEntry examples/dolls/index.html
+121 silly gunzTarPerm extractEntry examples/element-scroll/index.html
+122 silly gunzTarPerm extractEntry examples/enable-disable/index.html
+123 silly gunzTarPerm extractEntry examples/facebook/facebook.css
+124 silly gunzTarPerm extractEntry examples/facebook/index.html
+125 silly gunzTarPerm extractEntry examples/common/css/style.css
+126 silly gunzTarPerm extractEntry examples/pin/index.html
+127 silly gunzTarPerm extractEntry examples/resources/css/base.css
+128 silly gunzTarPerm extractEntry examples/resources/js/jquery.js
+129 silly gunzTarPerm extractEntry examples/resources/js/log.js
+130 silly gunzTarPerm extractEntry examples/scroll/index.html
+131 silly gunzTarPerm extractEntry examples/simple/index.html
+132 silly gunzTarPerm extractEntry examples/testbed/index.html
+133 silly gunzTarPerm extractEntry examples/tooltip/index.html
+134 silly gunzTarPerm extractEntry examples/viewport/colors.css
+135 silly gunzTarPerm extractEntry examples/viewport/index.html
+136 silly gunzTarPerm extractEntry CHANGELOG.md
+137 silly gunzTarPerm extractEntry CONTRIBUTING.md
+138 silly gunzTarPerm extractEntry src/css/helpers/_tether-theme-arrows.sass
+139 silly gunzTarPerm extractEntry src/css/helpers/_tether-theme-basic.sass
+140 silly gunzTarPerm extractEntry src/css/helpers/_tether.sass
+141 silly gunzTarPerm extractEntry src/css/mixins/_inline-block.sass
+142 silly gunzTarPerm extractEntry src/css/mixins/_pie-clearfix.sass
+143 silly gunzTarPerm extractEntry src/css/tether-theme-arrows-dark.sass
+144 silly gunzTarPerm extractEntry src/css/tether-theme-arrows.sass
+145 silly gunzTarPerm extractEntry src/css/tether-theme-basic.sass
+146 silly gunzTarPerm extractEntry src/css/tether.sass
+147 silly gunzTarPerm extractEntry src/js/abutment.js
+148 silly gunzTarPerm extractEntry src/js/constraint.js
+149 silly gunzTarPerm extractEntry src/js/markAttachment.js
+150 silly gunzTarPerm extractEntry src/js/shift.js
+151 silly gunzTarPerm extractEntry src/js/tether.js
+152 silly gunzTarPerm extractEntry src/js/utils.js
+153 verbose write writing to /data/React-Bootstrap4Dashboard/node_modules/tether/package.json
+154 info preinstall tether@1.3.2
+155 verbose readDependencies loading dependencies from /data/React-Bootstrap4Dashboard/node_modules/tether/package.json
+156 verbose readDependencies loading dependencies from /data/React-Bootstrap4Dashboard/node_modules/tether/package.json
+157 silly install resolved []
+158 verbose about to build /data/React-Bootstrap4Dashboard/node_modules/tether
+159 info build /data/React-Bootstrap4Dashboard/node_modules/tether
+160 info linkStuff tether@1.3.2
+161 silly linkStuff tether@1.3.2 has /data/React-Bootstrap4Dashboard/node_modules as its parent node_modules
+162 verbose linkBins tether@1.3.2
+163 verbose linkMans tether@1.3.2
+164 verbose rebuildBundles tether@1.3.2
+165 info install tether@1.3.2
+166 info postinstall tether@1.3.2
+167 verbose unlock done using /home/n/.npm/_locks/tether-460e86b75233a567.lock for /data/React-Bootstrap4Dashboard/node_modules/tether
+168 verbose validateInstall loading /data/React-Bootstrap4Dashboard/package.json for validation
+169 verbose stack Error: The package react-router@2.4.1 does not satisfy its siblings' peerDependencies requirements!
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:125:32
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/lib/install.js:268:7
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+169 verbose stack     at cb (/home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+169 verbose stack     at cb (/home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+169 verbose stack     at cb (/home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+169 verbose stack     at /home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+170 verbose cwd /data/React-Bootstrap4Dashboard
+171 error Linux 3.16.0-4-amd64
+172 error argv "node" "/home/n/.meteor/packages/meteor-tool/.1.3.2_4.5o1tvz++os.linux.x86_64+web.browser+web.cordova/mt-os.linux.x86_64/dev_bundle/bin/npm" "install" "tether" "--save"
+173 error node v0.10.43
+174 error npm  v2.14.22
+175 error code EPEERINVALID
+176 error peerinvalid The package react-router@2.4.1 does not satisfy its siblings' peerDependencies requirements!
+176 error peerinvalid Peer react-router-active-component@3.0.0 wants react-router@1.0.x
+177 verbose exit [ 1, true ]
