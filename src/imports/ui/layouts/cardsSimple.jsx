@@ -3,79 +3,87 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 import classnames from 'classnames';
+import { Random } from 'meteor/random';
+import { CardAlerts, FaIcons, SimpleCards } from '../../api/collection';
+import SimpleCard from '../components/simpleCard.jsx';
 
 export default class CardsSimple extends Component {
   constructor(props) {
     super(props);
+    this.renderCards = this.renderCards.bind(this);
+    this.insertCard = this.insertCard.bind(this);
   }
 
-  componentWillMount() {};
+  componentWillMount() {
+    if (this.SimpleCardsCount < 4) {
+      this.insertCard();  
+    }    
+  };
+
   componentDidMount() {};
   componentWillUpdate() {};
   componentDidUpdate() {};
 
+  renderCards() {
+    return this.props.SimpleCards.map((card) => (
+      <SimpleCard key={card._id} card={card}/>
+    ));
+  }
+
+  newNumber() {
+    numbers = "0123456789";
+    num1 = String(Random.choice(numbers));
+    num2 = String(Random.choice(numbers));
+    num3 = String(Random.choice(numbers));
+    return num1+num2+num3
+  }  
+
+  insertCard(event) {
+    event.preventDefault();
+    SimpleCards.insert({
+      createdAt: new Date(), // current time
+      number: this.newNumber(),
+      alert: (Random.choice(this.props.CardAlerts)).name,
+      icon: (Random.choice(this.props.FaIcons)).className,
+    });
+
+  }
+
   // RENDER
   render() {
     return (
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="card card-inverse card-primary">
-            <div className="card-block bg-primary">
-              <div className="rotate">
-                <i className="fa fa-hand-spock-o fa-5x"></i>
-              </div>
-              <h6 className="text-uppercase">Users</h6>
-              <h1 className="display-1">134</h1>
-            </div>
-          </div>
+      <div>
+
+        <button
+          type="button"
+          className="newItemBtn btn btn-secondary btn-md"
+          onClick={this.insertCard}>
+          New Card <i className="fa fa-chevron-right"></i>
+        </button>
+
+        <div className="row">
+          {this.renderCards()}
         </div>
 
-        <div className="col-lg-3 col-md-6">
-          <div className="card card-inverse card-success">
-            <div className="card-block bg-success">
-              <div className="rotate">
-                <i className="fa fa-user fa-5x"></i>
-              </div>
-              <h6 className="text-uppercase">Users</h6>
-              <h1 className="display-1">134</h1>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="card card-inverse card-danger">
-            <div className="card-block bg-danger">
-              <div className="rotate">
-                <i className="fa fa-list fa-4x"></i>
-              </div>
-              <h6 className="text-uppercase">Posts</h6>
-              <h1 className="display-1">87</h1>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="card card-inverse card-info">
-            <div className="card-block bg-info">
-              <div className="rotate">
-                <i className="fa fa-twitter fa-5x"></i>
-              </div>
-              <h6 className="text-uppercase">Tweets</h6>
-              <h1 className="display-1">125</h1>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-3 col-md-6">
-          <div className="card card-inverse card-warning">
-            <div className="card-block bg-warning">
-              <div className="rotate">
-                <i className="fa fa-share fa-5x"></i>
-              </div>
-              <h6 className="text-uppercase">Shares</h6>
-              <h1 className="display-1">36</h1>
-            </div>
-          </div>
-        </div>
       </div>
     );
   }
 }  
+
+
+CardsSimple.propTypes = {
+  CardAlerts: PropTypes.array.isRequired,
+  FaIcons: PropTypes.array.isRequired,
+  SimpleCards: PropTypes.array.isRequired,
+};
+ 
+export default createContainer(() => {
+  return {
+    CardAlerts: CardAlerts.find({}).fetch(),
+    FaIcons: FaIcons.find({}).fetch(),
+    SimpleCards: SimpleCards.find({}, { sort: { createdAt: -1 } }).fetch(),
+    SimpleCardsCount: SimpleCards.find({}).count(),
+  };
+}, CardsSimple);
+
 

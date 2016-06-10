@@ -1,0 +1,16 @@
+
+.newItemBtn {
+  margin-bottom: 5px; 
+}
+
+#rmItemBtn {
+  color: #000;
+  background-color: transparent;
+  border: none;
+}
+
+#rmItemBtn:hover {
+  color: #000;
+  background-color: transparent;
+  border: none;
+}

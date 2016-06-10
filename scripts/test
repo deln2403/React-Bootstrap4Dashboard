@@ -1,0 +1,13 @@
+#!/bin/sh
+
+HOSTNAME=debdb01
+DATABASE=savitTest
+
+export MONGO_URL="mongodb://$HOSTNAME:27017/$DATABASE"
+#export PORT=3000
+#export ROOT_URL=http://sub.example.com/ 
+
+#meteor --test --port 8080
+#meteor --debug-port 8888
+
+meteor test --driver-package practicalmeteor:mocha --port 8080
