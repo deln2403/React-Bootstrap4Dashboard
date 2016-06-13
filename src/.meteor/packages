@@ -22,5 +22,4 @@ react-meteor-data
 seba:minifiers-autoprefixer
 fourseven:scss
 orgztion:meteor-global-tether
-twbs:bootstrap@=4.0.0-alpha2
 fortawesome:fontawesome

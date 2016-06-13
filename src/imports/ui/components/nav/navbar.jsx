@@ -26,7 +26,7 @@ export default class Navbar extends Component {
         >
             ☰
         </button>
-        <a className="navbar-brand" href="#">Navbar</a>
+        <a className="navbar-brand" href="#">Meteor-React-Bootstrap4-Dashboard</a>
         <div className="collapse navbar-toggleable-xs" id="collapsingNavbar">
             <ul className="nav navbar-nav pull-right">
                 <li className="nav-item active">
@@ -42,11 +42,6 @@ export default class Navbar extends Component {
                     <a className="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
                 </li>
             </ul>
-            <form className="nav navbar-nav form-inline pull-xs-right">
-              <input type="text" className="form-control nav-item" placeholder="Username"/>
-              <input type="text" className="form-control nav-item" placeholder="Password"/>
-              <button className="btn btn-success-outline nav-item" type="submit">Search</button>
-            </form>
           </div>
       </nav>
     );

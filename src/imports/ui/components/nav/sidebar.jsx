@@ -19,15 +19,25 @@ export default class Sidebar extends Component {
     return (
      <div className="sidebar col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
         <ul className="nav nav-sidebar nav-pills nav-stacked">
-          <li className="nav-item"><a className="nav-link" href="#">Overview</a></li>
-          <li className="nav-item active"><a className="nav-link" href="#">Reports</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Analytics</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Export</a></li>
-          <li className="nav-item"><a className="nav-link" href="">Nav item</a></li>
-          <li className="nav-item"><a className="nav-link" href="">Nav item</a></li>
-          <li className="nav-item"><a className="nav-link" href="">Another</a></li>
-          <li className="nav-item"><a className="nav-link" href="">Nav item</a></li>
-          <li className="nav-item"><a className="nav-link" href="">One more</a></li>
+          <li className="nav-item">
+            <a className="nav-link" href="#cardsSimple">Simple Cards</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#circles">Circular Cards</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#gridLayout">GridLayout</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#cardsDeck">Cards Deck</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#masonryStyle">MasonryStyle</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#variousLayouts">VariousLayouts</a>
+          </li>
+
         </ul>
       </div>
     );

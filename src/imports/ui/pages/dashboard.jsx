@@ -11,7 +11,7 @@ import LargeModal from '../components/largeModal';
 import CardsSimple from '../layouts/cardsSimple';
 import CardsDeck from '../layouts/cardsDeck';
 import CardsMasonry from '../layouts/cardsMasonry';
-import ComboLayout from '../layouts/comboLayout';
+import GridLayout from '../layouts/gridLayout';
 import Circles from '../layouts/circles';
 import VariousLayouts from '../layouts/variousLayouts';
 
@@ -38,32 +38,11 @@ export default class Dashboard extends Component {
 
               <Alert />
               <CardsSimple />
-              <hr />
               <Circles />
-
-              <a id="features"></a>
-              <hr />
-              <p className="lead">
-                Are you ready for Bootstap 4? It's the 4th generation of this popular responsive framework. Bootstrap 4 will include some interesting new features such as 5 grid sizes (now including xl), cards, `em` sizing, CSS normalization (reboot) and larger font sizes.
-              </p>
-              <hr />
-              <ComboLayout />
-
-              <a id="more"></a>
-              <hr />
-              <h2 className="sub-header">Use card decks for equal height rows of cards</h2>
+              <GridLayout />
               <CardsDeck />
-
-              <a id="flexbox"></a>
-              <hr />
-              <h2>Masonry-style grid columns</h2>
-              <h6>with Bootstrap 4 flexbox</h6>
               <CardsMasonry />
-
-              <a id="layouts"></a>
-              <hr />
-              <h2 className="sub-header">Interesting layouts and elements</h2>
-              <VariousLayouts />
+                            <VariousLayouts />
 
             </div>
           </div>

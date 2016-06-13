@@ -4,18 +4,29 @@ import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 import classnames from 'classnames';
 import { Random } from 'meteor/random';
+
+/* Collections */
 import { CardAlerts, FaIcons, SimpleCards } from '../../api/collection';
+
+/* Components */
 import SimpleCard from '../components/simpleCard.jsx';
+import Switch from '../components/switch';
+
 
 export default class CardsSimple extends Component {
   constructor(props) {
     super(props);
     this.renderCards = this.renderCards.bind(this);
     this.insertCard = this.insertCard.bind(this);
+    this.toggleDisplayContent = this.toggleDisplayContent.bind(this);
+
+    this.state = {
+      displayContent: true,
+    }
   }
 
   componentWillMount() {
-    if (this.SimpleCardsCount < 4) {
+    if (this.SimpleCardsCount < 1) {
       this.insertCard();  
     }    
   };
@@ -23,6 +34,10 @@ export default class CardsSimple extends Component {
   componentDidMount() {};
   componentWillUpdate() {};
   componentDidUpdate() {};
+
+  toggleDisplayContent() {
+    this.setState({displayContent: !this.state.displayContent});
+  }
 
   renderCards() {
     return this.props.SimpleCards.map((card) => (
@@ -52,20 +67,30 @@ export default class CardsSimple extends Component {
   // RENDER
   render() {
     return (
-      <div>
+      <section>
+        <a id="cardsSimple"></a>
+        <hr />
+        <Switch
+          checked={this.state.displayContent}
+          toggle={this.toggleDisplayContent}
+        />
+        <h2 className="sectionTitle">Simple Cards</h2>
 
-        <button
-          type="button"
-          className="newItemBtn btn btn-secondary btn-md"
-          onClick={this.insertCard}>
-          New Card <i className="fa fa-chevron-right"></i>
-        </button>
+        { this.state.displayContent ? (
+        <div>
+          <button
+            type="button"
+            className="newItemBtn btn btn-secondary btn-md"
+            onClick={this.insertCard}>
+            New Card <i className="fa fa-chevron-right"></i>
+          </button>
 
-        <div className="row">
-          {this.renderCards()}
+          <div className="row">
+            {this.renderCards()}
+          </div>
         </div>
-
-      </div>
+        ) : '' }
+      </section>
     );
   }
 }  
