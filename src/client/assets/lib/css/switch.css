@@ -37,23 +37,28 @@
   width: 30px !important;
   height: 30px !important;
   margin: -5px;
-  background: #373a3c;
+  /* background: #373a3c; */
   position: absolute;
   top: 0;
   bottom: 0;
   right: 31px;
   border-radius: 30px;
+  background-color: #FFF;
+  border: none;
+  /* border: 1px solid #0275d8; */
   /*box-shadow: 0 2px 4px 0px #757575; */
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label {
-  background-color: #5cb85c;
+  /*background-color: #5cb85c;*/
+  background-color: #0275d8;
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
   /*border-color: #428bca;*/
   /*border-color: #000;*/
-  border: none;
+  /*border: none;*/
 }
 
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {

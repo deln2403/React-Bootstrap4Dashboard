@@ -8,15 +8,15 @@ function importFontAwesomeIcons() {
   mongoimport --host $HOSTNAME --port $PORT --db $DATABASE --type csv --headerline --file ./faIcons.dat
 }
 
-function importCardAlerts() {
-  mongoimport --host $HOSTNAME --port $PORT --db $DATABASE --type csv --headerline --file ./cardAlerts.dat
+function importAlertTypes() {
+  mongoimport --host $HOSTNAME --port $PORT --db $DATABASE --type csv --headerline --file ./alertTypes.dat
 }
 
 
 
 function importAll() {
   importFontAwesomeIcons
-  importCardAlerts
+  importAlertTypes
 }
 
 

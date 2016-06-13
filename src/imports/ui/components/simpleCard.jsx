@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { createContainer } from 'meteor/react-meteor-data';
 import classnames from 'classnames';
-import {SimpleCards } from '../../api/collection';
+import {SimpleCards } from '../../api/collections';
 
 export default class SimpleCard extends Component {
   constructor(props) {

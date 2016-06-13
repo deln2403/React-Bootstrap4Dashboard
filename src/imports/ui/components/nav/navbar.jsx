@@ -17,7 +17,7 @@ export default class Navbar extends Component {
   // RENDER
   render() {
     return (
-      <nav className="navbar navbar-fixed-top navbar-dark bg-inverse">
+      <nav className="navbar navbar-fixed-top navbar-dark bg-primary">
         <button
           className="navbar-toggler hidden-sm-up pull-right"
           type="button"
@@ -26,14 +26,15 @@ export default class Navbar extends Component {
         >
             ☰
         </button>
-        <a className="navbar-brand" href="#">Meteor-React-Bootstrap4-Dashboard</a>
+        <a className="navbar-brand" href="#">
+          <i className="fa fa-circle-o"></i>
+          <i className="fa fa-circle-o"></i>
+          <i className="fa fa-circle-o"></i>
+        </a>
         <div className="collapse navbar-toggleable-xs" id="collapsingNavbar">
             <ul className="nav navbar-nav pull-right">
                 <li className="nav-item active">
                     <a className="nav-link" href="#">Home</a>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#features">Features</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#myAlert" data-toggle="collapse">Wow</a>

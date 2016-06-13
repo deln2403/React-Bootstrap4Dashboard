@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 /* Components */
 import Sidebar from '../components/nav/sidebar';
+import Footer from '../components/nav/footer';
 import SidebarButton from '../components/nav/sidebarButton';
 import Alert from '../components/alert';
-import Footer from '../components/footer';
 import LargeModal from '../components/largeModal';
 
 /* Layouts */
@@ -12,7 +12,7 @@ import CardsSimple from '../layouts/cardsSimple';
 import CardsDeck from '../layouts/cardsDeck';
 import CardsMasonry from '../layouts/cardsMasonry';
 import GridLayout from '../layouts/gridLayout';
-import Circles from '../layouts/circles';
+import CardsCircle from '../layouts/cardsCircle';
 import VariousLayouts from '../layouts/variousLayouts';
 
 
@@ -38,11 +38,11 @@ export default class Dashboard extends Component {
 
               <Alert />
               <CardsSimple />
-              <Circles />
+              <CardsCircle />
               <GridLayout />
               <CardsDeck />
               <CardsMasonry />
-                            <VariousLayouts />
+              <VariousLayouts />
 
             </div>
           </div>

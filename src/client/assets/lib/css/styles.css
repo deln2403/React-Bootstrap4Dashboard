@@ -1,5 +1,5 @@
 body {
-  padding-top:51px;
+  padding-top:55px;
 }
 
 body, html {
@@ -17,7 +17,7 @@ body.modal-open {
 
 /* Hide for mobile, show later */
 .sidebar {
-  background-color: #f5f5f5;
+/*  background-color: #f5f5f5; */
   padding-left: 0px !important;;
   padding-right: 0px !important;
   padding: 20px;

@@ -17,8 +17,10 @@ export default class Footer extends Component {
   // RENDER
   render() {
     return (
-      <footer className="container-fluid">
-        <p className="text-right small">©2015 Company</p>
+      <footer className="footer">
+        <div className="container">
+          <span className="text-muted">©2016 Company.</span>
+        </div>
       </footer>
     );
   }

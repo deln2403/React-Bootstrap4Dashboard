@@ -41,7 +41,7 @@ export default class CardsMasonry extends Component {
     
         { this.state.displayContent ? (
         <div>        
-          <h6>with Bootstrap 4 flexbox</h6>
+          <h4>with Bootstrap 4 flexbox</h4>
 
           <div className="card-columns">
             <div className="card">
