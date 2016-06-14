@@ -51,7 +51,10 @@ export default class Dashboard extends Component {
 
               <SidebarButton toggle={this.toggleSidebar}/>
               <h1 className="display-1 hidden-xs-down">Bootstrap 4 Dashboard</h1>
+
+              <p className="lead">Meteor ReactJS Bootstrap 4 project</p>
               <p className="lead">(with off-canvas sidebar, based on BS v4 alpha)</p>
+              <p className="lead">(import alert types and fa icons for full experience)</p>
 
               <Alert />
               <CardsSimple />
