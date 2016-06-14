@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOSTNAME=debdb01
+HOSTNAME=localhost
 PORT=27017
 DATABASE=bootstrap4dashboard
 
