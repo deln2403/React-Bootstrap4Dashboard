@@ -21,29 +21,43 @@ The following sequence of packages were imported to create the Meteor project.
 
   cd React-Bootstrap4Dashboard
 
+
 # Add React
   meteor npm install react-bootstrap --save
+
   meteor npm install --save react-addons-transition-group react-addons-css-transition-group react-addons-linked-state-mixin react-addons-create-fragment react-addons-update react-addons-pure-render-mixin react-addons-test-utils react-addons-perf
+
   meteor npm install --save react-addons-pure-render-mixin
+
   meteor add react-meteor-data
 
 # Add React-Router
   meteor npm install --save deep-equal query-string
+
   meteor npm install --save react-router
+
   meteor npm install --save react-router-active-component classnames
+
 
 # Device detection for uix
   meteor add mystor:device-detection
 
+
 # SCSS for bootstrap
   meteor add seba:minifiers-autoprefixer
+
   meteor remove standard-minifier-css
+
   meteor add fourseven:scss
+
 
 # Bootstrap 4 alpha 2
   meteor npm install tether --save
+
   meteor add orgztion:meteor-global-tether
+
   meteor add twbs:bootstrap@=4.0.0-alpha2
+
   meteor add fortawesome:fontawesome
-}
+
 
