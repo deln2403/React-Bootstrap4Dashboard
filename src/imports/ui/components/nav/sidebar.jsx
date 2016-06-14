@@ -17,7 +17,10 @@ export default class Sidebar extends Component {
   // RENDER
   render() {
     return (
-     <div className="sidebar col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+     <div
+      className="sidebar col-md-3 col-lg-2 sidebar-offcanvas"
+      id="sidebar"
+      role="navigation">
         <ul className="nav nav-sidebar nav-pills nav-stacked">
           <li className="nav-item">
             <a className="nav-link" href="#cardsSimple">Simple Cards</a>

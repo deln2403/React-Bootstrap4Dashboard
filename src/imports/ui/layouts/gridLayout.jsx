@@ -13,7 +13,7 @@ export default class GridLayout extends Component {
     this.toggleDisplayContent = this.toggleDisplayContent.bind(this);
 
     this.state = {
-      displayContent: false,
+      displayContent: true,
     }
   }
 

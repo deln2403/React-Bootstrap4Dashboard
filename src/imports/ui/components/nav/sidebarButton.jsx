@@ -18,7 +18,12 @@ export default class SidebarButton extends Component {
   render() {
     return (
       <p className="hidden-md-up">
-        <button type="button" className="btn btn-primary-outline btn-sm" data-toggle="offcanvas"><i className="fa fa-chevron-left"></i> Menu</button>
+        <button
+          type="button"
+          className="btn btn-primary-outline btn-sm"
+          data-toggle="offcanvas">
+          <i className="fa fa-chevron-left"></i> Menu
+        </button>
       </p>
     );
   }

@@ -13,12 +13,23 @@ export default class MasonCard extends Component {
     super(props);
     this.removeCard = this.removeCard.bind(this);
 
+
+    const c10 = [true,false,false,false,false,
+                 false,false,false,false,false];
+    const c20 = [true,false,false,false,false];                 
+    const c25 = [true,false,false,false];                 
+    const c33 = [true,true,false];
+    const c50 = [true,false];
+    const c66 = [true,true,false];
+    const c100 = [true];
+
     this.state = {
-      imageOnly: Random.choice([true,false,false,false,false,false,false]),
-      image: Random.choice([true,false,false,false]),
-      title: Random.choice([true,true,true,false]),
-      text: Random.choice([true,true,false]),
-      footer: Random.choice([true,false]),
+      imageOnly: Random.choice(c10),
+      color: Random.choice(c20),
+      image: Random.choice(c20),
+      title: Random.choice(c25),
+      text: Random.choice(c66),
+      footer: Random.choice(c50),
     }
   }
 
@@ -40,6 +51,21 @@ export default class MasonCard extends Component {
     if (this.state.footer) {
       this.setState({text: true});
     }
+
+    if (this.state.imageOnly) {
+      this.setState({
+        color: false
+      });
+    }
+
+    if (this.state.color) {
+      this.setState({
+        image: false,
+        title: false,
+        text: true,
+        footer: true,
+      });
+    }
   };
   componentWillUpdate() {};
   componentDidUpdate() {};
@@ -51,13 +77,15 @@ export default class MasonCard extends Component {
 
   // RENDER
   render() {
-    const someClassName = classnames(
+    const ccolor = classnames(
     'card', {
-      dynamicClass: !( this.state.someFlag ) ? true : false,
-    },'staticClass');
- 
+      'card-inverse': !( this.state.color ) ? false : true,
+      'card-primary': !( this.state.color ) ? false : true,
+      'text-xs-center': !( this.state.color ) ? false : true,
+    });
+
     return (
-      <div className="card"> {/* start card */}
+      <div className={ccolor}> {/* start card */}
 
         {/* image only */}
         { this.state.imageOnly ? ( 
@@ -89,101 +117,21 @@ export default class MasonCard extends Component {
           </div>
         </div>
         )}
-        <footer>
-          <p className="card-text">
-          { this.state.footer ? (
-            <small className="text-muted">{this.props.card.footer}</small>
-          ) : '' }
-          <button
-            id="rmItemBtn"
-            className="btn btn-secondary btn-sm pull-right"
-            onClick={this.removeCard}>
-            &times;
-          </button>
-          </p>
-        </footer>
+        <div className="card-block"> {/* start card block */}
+          <footer>
+            { this.state.footer ? (
+              <small className="text-muted">{this.props.card.footer}</small>
+            ) : '' }
+            <button
+              id="rmItemBtn"
+              className="btn btn-secondary btn-sm pull-right"
+              onClick={this.removeCard}>
+              &times;
+            </button>
+          </footer>
+        </div>
       </div>
     );
   }
 }  
 
-/*
-<!-- Card 1 -->
-<div className="card">
-  <img
-    className="card-img-top img-responsive"
-    src="//placehold.it/600x200/444/fff?text=..."
-    alt="Card image cap"/>
-  <div className="card-block">
-    <h4 className="card-title">Card title that wraps to a new line</h4>
-    <p className="card-text">
-      This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-    </p>
-  </div>
-</div>
-
-
-<!-- Card 2 -->
-<div className="card card-block">
-  <blockquote className="card-blockquote">
-    <p>Bootstrap 4 will be lighter and easier to customize.</p>
-    <footer>
-      <small className="text-muted">
-        Someone famous like <cite title="Source Title">Mark Otto</cite>
-      </small>
-    </footer>
-  </blockquote>
-</div>
-
-<!-- Card 3 -->
-<div className="card card-block card-inverse card-primary text-center">
-  <blockquote className="card-blockquote">
-    <p>Create masonry or Pinterest-style card layouts in Bootstrap 4.</p>
-    <footer>
-      <small>
-        Someone famous in <cite title="Source Title">Bootstrap</cite>
-      </small>
-    </footer>
-  </blockquote>
-</div>
-
-<!-- Card 4 -->
-<div className="card card-block text-center">
-  <h4 className="card-title">Clever heading</h4>
-  <p className="card-text">
-    This card has supporting text below as a natural lead-in to additional content.
-  </p>
-  <p className="card-text">
-    <small className="text-muted">Last updated 5 mins ago</small>
-  </p>
-</div>
-
-<!-- Card 5 -->
-<div className="card">
-  <img
-    className="card-img img-responsive"
-    src="//placehold.it/600x200/777/fff?text=..."
-    alt="Card image"/>
-</div>
-
-<!-- Card 6  -->
-<div className="card">
-  <div className="card-block">
-    <ul className="list-unstyled">
-      <li className="text-capitalize">
-        <code className="text-lowercase">text-capitalize</code> Capitalize each word
-      </li>
-      <li className="text-uppercase">
-        <code className="text-lowercase">text-uppercase</code> Uppercase text
-      </li>
-      <li className="text-success"><code>text-success</code> Contextual colors for text</li>
-      <li><code>text-muted</code> <span className="text-muted">Lighten with muted</span></li>
-      <li><code>text-info</code> <span className="text-muted">Info text color</span></li>
-      <li><code>text-danger</code> <span className="text-muted">Danger text color</span></li>
-      <li><code>text-warning</code> <span className="text-muted">Warning text color</span></li>
-      <li><code>text-primary</code> <span className="text-primary">Primary text color</span></li>
-    </ul>
-  </div>
-</div>
-
-*/

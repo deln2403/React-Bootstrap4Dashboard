@@ -21,7 +21,7 @@ export default class CardsSimple extends Component {
     this.insertCard = this.insertCard.bind(this);
 
     this.state = {
-      displayContent: false,
+      displayContent: true,
     }
   }
 
