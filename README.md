@@ -9,7 +9,21 @@ The site works with mobile devices, although I've noticed that some cards (e.g. 
 
 The cards can all be generated from the site itself. Only AlertTypes and Font Awesome Icon lists need to be imported into the database. The 'Data' folder contains the data as well as example commands.
 
+
+# How To Build
+git clone (this repo)
+
+cd React-Bootstrap4Dashboard
+
+meteor npm install //installs packages listed in src/packages.json
+
+meteor              //installs packages listed in src/.meteor/packages
+
+
+
+
 Have fun!
+
 
 
 
