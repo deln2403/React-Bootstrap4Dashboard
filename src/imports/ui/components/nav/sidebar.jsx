@@ -23,22 +23,52 @@ export default class Sidebar extends Component {
       role="navigation">
         <ul className="nav nav-sidebar nav-pills nav-stacked">
           <li className="nav-item">
-            <a className="nav-link" href="#cardsSimple">Simple Cards</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#cardsSimple">
+              Simple Cards
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#circles">Circular Cards</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#circles">
+              Circular Cards
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#gridLayout">GridLayout</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#gridLayout">
+              GridLayout
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#cardsDeck">Cards Deck</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#cardsDeck">
+              Cards Deck
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#masonryStyle">MasonryStyle</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#masonryStyle">
+              MasonryStyle
+            </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#variousLayouts">VariousLayouts</a>
+            <a
+              onClick={this.props.toggle}
+              className="nav-link"
+              href="#variousLayouts">
+              VariousLayouts
+            </a>
           </li>
 
         </ul>

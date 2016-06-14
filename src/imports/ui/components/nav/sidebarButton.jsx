@@ -21,7 +21,7 @@ export default class SidebarButton extends Component {
         <button
           type="button"
           className="btn btn-primary-outline btn-sm"
-          data-toggle="offcanvas">
+          onClick={this.props.toggle}>
           <i className="fa fa-chevron-left"></i> Menu
         </button>
       </p>
