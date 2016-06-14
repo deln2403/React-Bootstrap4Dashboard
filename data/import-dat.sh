@@ -13,7 +13,6 @@ function importAlertTypes() {
 }
 
 
-
 function importAll() {
   importFontAwesomeIcons
   importAlertTypes

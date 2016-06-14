@@ -50,7 +50,6 @@ body.modal-open {
  * --------------------------------------------------
  */
 @media screen and (max-width: 48em) {
-
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;

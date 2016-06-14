@@ -50,6 +50,7 @@ export default class Dashboard extends Component {
 
         <Footer />
         <LargeModal />
+
       </div>
     )
   }

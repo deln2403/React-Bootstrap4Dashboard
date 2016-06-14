@@ -22,7 +22,7 @@ export default class CardsDeck extends Component {
     this.insertCard = this.insertCard.bind(this);
 
     this.state = {
-      displayContent: true,
+      displayContent: false,
       allowInsert: true,
     }
   }

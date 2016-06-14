@@ -1,0 +1,29 @@
+
+
+
+/*
+ * Off Canvas at medium breakpoint
+ * 48em == 768px
+ * --------------------------------------------------
+ */
+@media (max-width: 62em) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+/*
+ * Off Canvas wider at sm breakpoint 
+ * 34em == 544px
+ *
+ */
+@media (max-width: 34em) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+
+

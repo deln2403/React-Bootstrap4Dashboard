@@ -13,7 +13,7 @@ export default class VariousLayouts extends Component {
     this.toggleDisplayContent = this.toggleDisplayContent.bind(this);
 
     this.state = {
-      displayContent: true,
+      displayContent: false,
     }
   }
 

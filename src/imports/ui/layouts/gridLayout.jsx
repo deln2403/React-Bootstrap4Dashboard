@@ -13,7 +13,7 @@ export default class GridLayout extends Component {
     this.toggleDisplayContent = this.toggleDisplayContent.bind(this);
 
     this.state = {
-      displayContent: true,
+      displayContent: false,
     }
   }
 
@@ -36,7 +36,6 @@ export default class GridLayout extends Component {
     return (
       <section>
         <a id="gridLayout"></a>
-
         <hr />
         <p className="lead">
         Are you ready for Bootstap 4? It's the 4th generation of this popular responsive framework. Bootstrap 4 will include some interesting new features such as 5 grid sizes (now including xl), cards, `em` sizing, CSS normalization (reboot) and larger font sizes.

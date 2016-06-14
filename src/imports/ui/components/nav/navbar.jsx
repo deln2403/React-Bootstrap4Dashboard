@@ -29,7 +29,6 @@ export default class Navbar extends Component {
         <a className="navbar-brand" href="#">
           <i className="fa fa-circle-o"></i>
           <i className="fa fa-circle-o"></i>
-          <i className="fa fa-circle-o"></i>
         </a>
         <div className="collapse navbar-toggleable-xs" id="collapsingNavbar">
             <ul className="nav navbar-nav pull-right">
